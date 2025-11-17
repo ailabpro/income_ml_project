@@ -45,9 +45,9 @@ logistic_pipe = load_logistic_pipeline()
 
 # UI
 st.title("Income >$50K Predictor")
-st.sidebar.header("Input")
+st.sidebar.header("Input Features")
 
-with st.sidebar.form("form"):
+with st.sidebar.form("input_form"):
     age = st.slider("Age", 17, 90, 35)
     education = st.selectbox("Education", df["education"].unique())
     education_num = st.slider("Education Years", 1, 16, 13)
