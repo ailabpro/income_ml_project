@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: raw
+    schema: main
+    tables:
+      - name: raw_adult
+        description: "Raw Adult Income dataset from UCI"
+        columns:
+          - name: age
+            description: "Age in years"
+          - name: income
+            description: "Income bracket: <=50K or >50K"

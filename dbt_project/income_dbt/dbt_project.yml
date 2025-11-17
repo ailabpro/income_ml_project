@@ -1,0 +1,22 @@
+name: 'income_dbt'
+version: '1.0.0'
+config-version: 2
+
+profile: income_dbt
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+models:
+  income_dbt:
+    staging:
+      +materialized: view
+    marts:
+      +materialized: table
+
+seeds:
+  income_dbt:
+    raw_adult:
+      +column_types:
+        age: integer
+        income: varchar
