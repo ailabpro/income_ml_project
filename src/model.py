@@ -1,5 +1,5 @@
 # src/model.py
-# Updated Nov 25, 2025
+# this line of comment is added to test CI/CD pipeline
 """
 ML Models: Logistic Regression & XGBoost
 Target: income (>50K = 1)
