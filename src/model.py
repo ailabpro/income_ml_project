@@ -1,4 +1,5 @@
 # src/model.py
+# Updated Nov 25, 2025
 """
 ML Models: Logistic Regression & XGBoost
 Target: income (>50K = 1)
